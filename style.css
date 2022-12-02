@@ -4,13 +4,88 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(rgb(151, 87, 87), rgba(123, 110, 218, 0.469));
+    background-color: rgb(255, 219, 173);
     background-repeat: no-repeat;
     font-size: 14px;
     font-family: 'Fugaz One', cursive;
 }
 
-.container {
-    max-width: 1280px;
-    margin: 0 auto;
+
+
+/* NAVIGATION BAR*/
+h2 {
+    font-size: 1.5rem;
+    
 }
+
+header {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 2%;
+    /*border: 1px solid black;*/
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    margin: 0em 0em;
+    /*border: 1px solid black;*/
+    padding: 1em 2em;
+    font-size: 1.5rem;
+}
+
+button {
+    font-size: 1.2rem;
+}
+
+
+
+
+/* NAVIGATION BAR*/
+
+
+/* NAVIGATION BAR MEDIA QUERY*/
+
+@media screen and (max-width: 320px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+
+
+    
+    }
+
+    nav ul {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* NAVIGATION BAR MEDIA QUERY*/
+
+/* MAIN SECTION*/
+h1 {
+    font-size: 2rem;
+
+}
+
+#hero {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* MAIN SECTION*/
+
+
+/* MAIN SECTION MEDIA QUERY*/
+
+@media screen and (max-width: 320px) {
+
+}
+/* MAIN SECTION MEDIA QUERY*/
