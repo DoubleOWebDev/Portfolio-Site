@@ -1,22 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap'); 
+html {
+    font-size: 14px;
+}
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: rgb(255, 219, 173);
-    color: rgb(0, 47, 6);
-
-    font-size: 14px;
-    font-family: 'Fugaz One', cursive;
+    background-color: rgb(159, 255, 250);
+    color: rgb(17, 26, 28);
+    font-family: 'Caveat Brush', cursive;
+    list-style: none;
+    text-decoration: none;
 }
 
 
 
 /* NAVIGATION BAR*/
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 2%;
+    margin: 0% 2%;
+}
+
+.container > * {
+    width: 50%;
+}
 
 
 
+.container nav .nav-links {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
+}
+
+.nav-links li a:hover {
+    color: white;
+}
 
 
 
@@ -26,22 +49,7 @@
 
 /* NAVIGATION BAR MEDIA QUERY*/
 
-@media screen and (max-width: 320px) {
-    .container {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-content: center;
-    }
 
-    header nav ul , header nav ul li a {
-        list-style: none;
-        text-decoration: none;
-        text-align: center;
-        width: 100%;
-    }
-
-}
 /* NAVIGATION BAR MEDIA QUERY*/
 
 /* MAIN SECTION*/
@@ -52,21 +60,5 @@
 
 /* MAIN SECTION MEDIA QUERY*/
 
-@media screen and (max-width: 320px) {
-    #hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-   }
 
-   #hero h1 {
-    font-size: 4rem;
-   } 
-
-   .heroFlexItem:nth-of-type(1) { order: 3; }
-   .heroFlexItem:nth-of-type(2) { order: 2; }
-   .heroFlexItem:nth-of-type(3) { order: 1; }
-  
-}
 /* MAIN SECTION MEDIA QUERY*/
