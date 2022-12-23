@@ -105,9 +105,41 @@ html {
 
 /* MAIN SECTION MEDIA QUERY*/
 
+
+/*CONTACT FORM STYLING*/
+
+.contactForm{
+    border: 10px solid black;
+    margin: 0.5em 2em;
+    padding: 3em 0em;
+    border-radius: 30%;
+    height: 700px;
+}
+
+
+.contactForm , .contactForm form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2.0rem;
+    
+}
+
+.contactForm h2 {
+    margin-bottom: 0.5em;
+    font-size: 6rem;
+}
+
+.contactForm form input {
+    width: 100%;
+    padding: 0.5em 2em;
+}
+
+/*CONTACT FORM STYLING*/
+
 /* FOOTER SECTION*/
 footer {
-    margin: 0%;
+    margin-top: 13.2%;
     border: 1px solid black;
 }
 
