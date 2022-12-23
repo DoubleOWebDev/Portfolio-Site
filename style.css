@@ -6,7 +6,7 @@ html {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: rgb(159, 255, 250);
+    /*background-color: rgb(159, 255, 250);*/
     color: rgb(17, 26, 28);
     font-family: 'Caveat Brush', cursive;
     list-style: none;
@@ -15,7 +15,21 @@ html {
 
 body {
     min-height: 100vh;
+    background-image: url(https://d1csarkz8obe9u.cloudfront.net/posterpreviews/yellow-notebook-paper-background-design-template-d7dfa26f8c8c759652e2521f0ecd24eb_screen.jpg?ts=1636990781);
+    background-size: 100%;
+    background-position: center;
 }
+
+.aboutSection h2:nth-child(1),
+.projectsSection h2:nth-child(1),
+.servicesSection h2:nth-child(1),
+.contactSection h2:nth-child(1) {
+    width: 100%;
+    text-align: center;
+    padding: 0.5em 1em;
+    font-size: 4rem;
+}
+
 
 /* NAVIGATION BAR*/
 
@@ -77,10 +91,16 @@ body {
     border: 1px solid yellow;
     width: 50%;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
 }
 
-.heroMain section {
-    align-content: center;
+.heroMain section button{
+    width: 30%;
+    padding: 0.5em 1em;
 }
 
 .heroMain img{
@@ -89,6 +109,7 @@ body {
     border: 5px solid red;
     border-radius: 50%;
     flex: 0.5;
+    padding: 1.5em 2em;
 }
 
 /* MAIN SECTION*/
@@ -102,22 +123,20 @@ body {
     align-items: flex-start;
 }
 
-.aboutSection h2 {
-    width: 100%;
-    text-align: center;
-}
-
-.aboutSection h2:nth-child(2), 
 .aboutSection img {
-    width: 50%;
+    width: 40%;
 }
 
 .aboutSection h2:nth-child(2){
     flex: 2;
+    justify-self: center;
+    align-self: center;
+    width: 20%;
 }
 
 .aboutSection img {
     flex: 0.5;
+    border-radius: 50%;
 }
 /*ABOUT SECTION*/
 
@@ -131,6 +150,8 @@ body {
 /*SERVICES SECTION */
 .servicesSection {
     border: 5px solid rgb(210, 203, 0);
+    display: flex;
+    flex-direction: column;
 }
 /*SERVICES SECTION*/
 
@@ -139,34 +160,48 @@ body {
 /*CONTACT SECTION*/
 
 /*CONTACT FORM STYLING*/
+
 .contactSection{
-    border: 5px solid rgb(114, 251, 102);
-}
-.contactForm{
     border: 10px solid black;
     margin: 0.5em 2em;
     padding: 3em 0em;
-    border-radius: 30%;
     height: 700px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-
-.contactForm , .contactForm form {
+.contactSection section {
+    width: 50%;
+}
+ 
+.contactSection form {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 2.0rem;
-    
+    padding: 0.5em 1em;
 }
 
-.contactForm h2 {
+.contactSection section p {
+    font-size: 6rem;
+}
+
+.contactSection h2 {
     margin-bottom: 0.5em;
     font-size: 6rem;
 }
 
-.contactForm form input {
+.contactSection form {
+    border: 5px solid red;
+}
+
+.contactSection form input,
+.sctOne {
     width: 100%;
     padding: 0.5em 2em;
+}
+.contactSection form input:nth-child(4){
+    padding: 1em 5em;
 }
 
 /*CONTACT FORM STYLING*/
