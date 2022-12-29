@@ -1,139 +1,136 @@
+/***UNIVERSAL STYLES***/
+html {
+    font-size: 14px;
+}
+
 * {
     padding: 0;
     margin: 0;
     text-decoration: none;
-    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #242424;
     color: white;
 }
-  
-body {
-    width: 375px;
-    height: 5013px;
-    border: 5px solid red;
-    margin: 0 auto;
-    background-color: #151515;
-}
-  
-header {
-    height: 383px;
-}
-  
-nav {
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-}
-  
-nav ul{
-    display: flex;
-    justify-content:space-around;
-      margin-top:20px;
-}
-  
-nav ul li a img {
-    width: fit-content;
-    height: fit-content;
+
+li {
+    list-style: none;
 }
 
-header nav h2 {
-    margin-top:25px;
-}
-  
-header nav img {
-    height:291px;
-    width:174px;
-    margin-top:15px;
-}
-  
+/***UNIVERSAL STYLES***/
 
 
-span{
-   border-bottom:3px solid green;
-}
-  
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    text-align:center;
-    width: 343px;
-    height: 244px;
-    margin-top:45px;
-}
-  
-.container p{
-    margin-top:15px;
-    color: grey;
-}
-  
-.container button {
-    background-color: black;
-    border-bottom:2px solid green;
-    border-spacing: 3px;
-    text-transform: uppercase;
-    margin-top:15px;
-}
-  
-  
-.skillSection {
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    text-align:center;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
-    width: 345px;
-    margin-left: 15px;
-}
-  
-.skillSection section {
-      margin-top:25px;
-}
-  
-.skillSection section:nth-child(6){
-    margin-bottom:50px;
-}
 
-.projectTitle {
-  margin-top: 75px;
-  width:343px;
-  height: 40px;
-  text-transform: uppercase;
-}
+/*** NAVIGATION BARS*****/
+@media (min-width:768px) and (max-width: 1440px) {
+    .nav  {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: 1% 0% 3% 10%;
+    }
 
-.projectTitle > * {
-    display: flex;
-    justify-content:space-between;
-    margin: 0px 16px;
-}
+    .nav ul {
+        display: flex;
+    }
 
-.projectTitle section button {
-  text-transform: uppercase;
-  background-color: black;
-}
+    nav ul > * , .nav h2 {
+        font-size: 2rem;
+    }
+/*** NAVIGATION BARS*****/
 
-.projectDescribe {
-  border: 3px solid grey;
-  margin: 0 16px;
-  text-transform: uppercase;
-}
 
-.projectDescribe section:nth-child(3) {
-  display: flex;
-  justify-content: space-between;
-  width: 70%;
-}
+/**** MAIN SECTION ****/
+    .container {
+        display: flex;
+        justify-content: space-around;
+        width: 80%;
+        margin-left: 10%;
+        border-bottom: 1px solid white;
+        padding-bottom: 5%;
+    }
 
-.projectDescribe section:nth-child(3) button {
-  background-color: black;
-  text-transform: uppercase;
-}
+    .container .intro {
+        width: 706px;
+        height: 303px;
+    }
+    .container .intro button {
+        width: 100px;
+        margin-top: 10%;
+        text-transform: uppercase;
+        border: none;
+        border-bottom: 1px solid rgb(78,225,160);
+        background-color: black;
+        color: white;
+    }
+    .container img {
+        width: 30%;
+        height: 30%;
+    }
 
-.contactSect {
-  height: 515px;
-  display: flex;
-}
+    .intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
-.contactSect form button {
-  background-color: black;
+    .intro h1 {
+        font-size: 3.5rem;
+    }
+
+/**** MAIN SECTION ****/
+
+/**** SKILL SECTION****/
+    .skillSection {
+        display: grid;
+        width: 76%;
+        height: 300px;
+        margin: 0 auto;
+        padding: 5% 0%;
+        grid-template-columns: repeat(3, 250px);
+        grid-template-rows: repeat(3, auto);
+        align-items: flex-start;
+        align-content: space-around;
+        justify-content: center;
+    }
+
+    .skillSection section h2 {
+        padding: 0% 0% 5% 0%;
+        font-size: 2.5rem;
+    }
+
+    .skillSection section p {
+        font-size: 1.3rem;
+    }
+
+/**** SKILL SECTION****/
+
+/**** PROJECT TITLE SECTION****/
+    .projectTitle {
+        width: 100%;
+    }
+
+    .projectTitle section {
+        width: 80%;
+        margin-left: 10%;
+        display: flex;
+        justify-content: space-between;
+    }
+/**** PROJECT TITLE SECTION****/
+
+
+/**** PROJECT DISPLAY SECTION****/
+    .projectDisplay {
+            display: grid;
+            width: 76%;
+            height: 675px;
+            grid-template-columns: repeat(2, 250px);
+            grid-template-rows: repeat(3, auto);
+            align-items: flex-start;
+            align-content: space-around;
+            justify-content: center;
+        }
+/**** PROJECT DISPLAY SECTION****/
 }
