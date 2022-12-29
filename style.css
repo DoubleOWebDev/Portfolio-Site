@@ -11,14 +11,33 @@ html {
 }
 
 body {
-    background-color: #242424;
+    background-color: black;
     color: white;
+    height: 100vh;
 }
 
 li {
     list-style: none;
 }
 
+a {
+    color: white;
+}
+
+h2 {
+    align-self: flex-end;
+    font-size: 2.5rem;
+}
+
+button {
+    width: 100px;
+    margin-top: 10%;
+    text-transform: uppercase;
+    border: none;
+    border-bottom: 1px solid rgb(78,225,160);
+    background-color: transparent;
+    color: white;
+}
 /***UNIVERSAL STYLES***/
 
 
@@ -34,6 +53,8 @@ li {
 
     .nav ul {
         display: flex;
+        flex: 0.3;
+        justify-content: space-between;
     }
 
     nav ul > * , .nav h2 {
@@ -56,15 +77,7 @@ li {
         width: 706px;
         height: 303px;
     }
-    .container .intro button {
-        width: 100px;
-        margin-top: 10%;
-        text-transform: uppercase;
-        border: none;
-        border-bottom: 1px solid rgb(78,225,160);
-        background-color: black;
-        color: white;
-    }
+
     .container img {
         width: 30%;
         height: 30%;
@@ -96,10 +109,10 @@ li {
         justify-content: center;
     }
 
-    .skillSection section h2 {
+    /*.skillSection section h2 {
         padding: 0% 0% 5% 0%;
         font-size: 2.5rem;
-    }
+    }*/
 
     .skillSection section p {
         font-size: 1.3rem;
@@ -113,8 +126,8 @@ li {
     }
 
     .projectTitle section {
-        width: 80%;
-        margin-left: 10%;
+        width: 60%;
+        margin-left: 20%;
         display: flex;
         justify-content: space-between;
     }
@@ -126,6 +139,7 @@ li {
             display: grid;
             width: 76%;
             height: 675px;
+            margin-left: 10%;
             grid-template-columns: repeat(2, 250px);
             grid-template-rows: repeat(3, auto);
             align-items: flex-start;
@@ -133,4 +147,51 @@ li {
             justify-content: center;
         }
 /**** PROJECT DISPLAY SECTION****/
+
+/**** CONTACT SECTION****/
+
+        #conclusionSect{
+            background-color: #242424;
+            width: 100%;
+        }
+
+        #contactSect {
+            display: flex;
+            width: 80%;
+            height: 375px;
+            margin-left: 15%;
+            justify-content: center;
+            flex-wrap: wrap;
+
+        }
+        
+        #contactSect h2 {
+            font-size: 4rem;
+            margin-bottom: 3%;
+        }
+
+        #contactSect section, #contactSect form{
+            width: 50%;
+            height: 327px;
+            padding-top: 12.44%;
+        }
+
+
+        #contactSect form input{
+            width: 80%;
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid white;
+            padding: 1em 2em;
+            color: white;
+        }
+/**** CONTACT SECTION****/
+
+        footer {
+            padding-bottom: 3%;
+            width: 80%;
+            margin-left: 10%;
+            border-top: 1px solid white;
+        }
+
 }
